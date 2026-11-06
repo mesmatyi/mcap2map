@@ -1,0 +1,82 @@
+{
+ "description": "Lexus3 (SZE JKK): NovAtel PwrPak INS, Ouster OS-64 os_center, two 2880x1860 cameras c2_camera_left/right. Priors estimated on the Kaposv\u00e1r kek_2 bag (2026-06-11); every run re-estimates them.",
+ "match": {
+  "base_frame": "lexus3/base_link",
+  "lidar_frame": "lexus3/os_center"
+ },
+ "prior": {
+  "lidar_correction": [
+   2.7955,
+   0.5707,
+   0.27,
+   -10.69
+  ],
+  "lidar_correction_note": "[yaw, pitch, roll] deg applied in base_link (INS frame) on top of /tf_static, lidar stamp offset ms",
+  "gnss_antenna_in_base_link": [
+   1.5931,
+   -0.2199,
+   1.4438
+  ],
+  "ins_heading_offset_deg": 2.64,
+  "cameras": {
+   "c2_camera_left_link": {
+    "base_T_cam": [
+     [
+      0.30593852160155494,
+      -0.0008367018157081365,
+      0.9520507924246092,
+      1.584932
+     ],
+     [
+      -0.9520065970796027,
+      0.00943228312323741,
+      0.30593297273258746,
+      0.374194
+     ],
+     [
+      -0.009236147870779202,
+      -0.9999551552246367,
+      0.002089091951503082,
+      1.206791
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    "dt_cam_ms": 689.7
+   },
+   "c2_camera_right_link": {
+    "base_T_cam": [
+     [
+      -0.24043945193059307,
+      0.025973258941761192,
+      0.9703163009118522,
+      1.537612
+     ],
+     [
+      -0.9706242309192894,
+      -0.015525187824456811,
+      -0.24010059542065512,
+      -0.431983
+     ],
+     [
+      0.008828234419738347,
+      -0.9995416078703632,
+      0.028942711655247342,
+      1.240973
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    "dt_cam_ms": 692.2
+   }
+  }
+ }
+}
